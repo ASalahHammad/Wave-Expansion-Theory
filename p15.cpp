@@ -66,7 +66,7 @@ int main()
     double cl = cn*cos(alpha) - ca*sin(alpha);
     double cd = ca*cos(alpha) + cn*sin(alpha);
     double cm_le = 1.0/4.0/k/pow(M_inf, 2) * ((p1_p_inf+3*p2_p_inf-p3_p_inf-3*p4_p_inf) + pow(tan(epsilon),2)*(p1_p_inf-p2_p_inf-p3_p_inf+p4_p_inf));
-    double cm_c4 = cm_le + 1/4.0*cl;
-    cout << "cn = " << cn << ", ca = " << ca << ", cl = " << cl << ", cd = " << cd << ", cm_le = " << cm_le << ", cm_c4 = " << cm_c4 << "\n";
+    double cm_c2 = cm_le + 1/2.0*cl;
+    cout << "cn = " << cn << ", ca = " << ca << ", cl = " << cl << ", cd = " << cd << ", cm_le = " << cm_le << ", cm_c2 = " << cm_c2 << "\n";
     return 0;
 }
