@@ -46,7 +46,7 @@ vector<double> isentropic(int n, double argv)
         {
             throw invalid_argument("Area ratio can't be less than 1\n");
         }
-        if(argv<1.00000000001)
+        if(argv>0.9999)
         {
             M = 1.0;
         }
@@ -76,7 +76,7 @@ vector<double> isentropic(int n, double argv)
         }
         else
         {
-            if(argv<1.00000000001)
+            if(argv<1.0001)
             {
                 M = 1.0;
             }
